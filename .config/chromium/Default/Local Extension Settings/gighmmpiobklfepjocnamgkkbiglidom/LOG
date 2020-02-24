@@ -1,0 +1,22 @@
+2020/02/24-16:23:54.471 818 Reusing MANIFEST /home/zack/.config/chromium/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/MANIFEST-000001
+2020/02/24-16:23:54.472 818 Recovering log #582
+2020/02/24-16:23:54.533 818 Level-0 table #585: started
+2020/02/24-16:23:54.583 818 Level-0 table #585: 4960609 bytes OK
+2020/02/24-16:23:54.587 818 Delete type=0 #582
+2020/02/24-16:24:55.157 e27 Level-0 table #588: started
+2020/02/24-16:24:55.199 e27 Level-0 table #588: 4960015 bytes OK
+2020/02/24-16:24:55.201 e27 Delete type=0 #586
+2020/02/24-16:24:55.202 e27 Compacting 4@0 + 2@1 files
+2020/02/24-16:24:55.281 e27 Generated table #589@0: 1 keys, 4960015 bytes
+2020/02/24-16:24:55.284 e27 Generated table #590@0: 7 keys, 846 bytes
+2020/02/24-16:24:55.284 e27 Compacted 4@0 + 2@1 files => 4960861 bytes
+2020/02/24-16:24:55.286 e27 compacted to: files[ 0 2 1 0 0 0 0 ]
+2020/02/24-16:24:55.286 e27 Delete type=2 #579
+2020/02/24-16:24:55.286 e27 Delete type=2 #583
+2020/02/24-16:24:55.286 e27 Delete type=2 #588
+2020/02/24-16:24:55.286 e27 Delete type=2 #581
+2020/02/24-16:24:55.286 e27 Delete type=2 #578
+2020/02/24-16:24:55.286 e27 Delete type=2 #585
+2020/02/24-16:24:56.833 e27 Level-0 table #592: started
+2020/02/24-16:24:56.882 e27 Level-0 table #592: 4960653 bytes OK
+2020/02/24-16:24:56.884 e27 Delete type=0 #587

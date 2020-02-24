@@ -1,0 +1,25 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "js/background.js" ]
+      }
+   },
+   "description": "Adding a Personal Folder in Chrome OS",
+   "file_system_provider_capabilities": {
+      "configurable": false,
+      "multiple_mounts": true,
+      "source": "file",
+      "watchable": false
+   },
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh3s1gndEEF/rxsVdkny3vlm1PQ9GdQ47/ho5gqouLQCF8YkZzjoKGPjV+a8shNEOVZ2DtzZX9L5Ob6Hpu84wTo752aEnNB64XOUroqUIaVrarnEANBxlHF9MFb3lLmIVdLySKyC2sSnDbBeGQnwWusNNGhAAYGdPU5cDAw4p63IiH9soJHtyet2cN0GAP+/2ikrDQJPD8ezqq3Wr2hWhKkDF6rHzc6m3LncX7wRh9xE3edXo3AxHglFxzTch2wzNOl/czEDspLegrsndipLz/qKfiZg53mihTD7JIsW8kkxa83inFqnMm6rFnq7NrxOHfLc1Vlo+PoR1RKnrtgl/LwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "42",
+   "name": "Add MY Documents",
+   "permissions": [ "storage", "unlimitedStorage", "fileSystemProvider" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4"
+}

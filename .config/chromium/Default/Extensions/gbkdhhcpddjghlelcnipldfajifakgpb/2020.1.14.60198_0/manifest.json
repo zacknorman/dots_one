@@ -1,0 +1,62 @@
+{
+   "app": {
+      "icon_color": "#EFBA00",
+      "launch": {
+         "web_url": "https://tabs.ultimate-guitar.com/?utm_source=web_app_manifest"
+      },
+      "linked_icons": [ {
+         "size": 32,
+         "url": "https://cdn.ustatik.com/public/img/product_icons/ug/apple-touch-icon-48x48.png"
+      }, {
+         "size": 48,
+         "url": "https://cdn.ustatik.com/public/img/product_icons/ug/apple-touch-icon-48x48.png"
+      }, {
+         "size": 64,
+         "url": "https://cdn.ustatik.com/public/img/product_icons/ug/apple-touch-icon-72x72.png"
+      }, {
+         "size": 72,
+         "url": "https://cdn.ustatik.com/public/img/product_icons/ug/apple-touch-icon-72x72.png"
+      }, {
+         "size": 96,
+         "url": "https://cdn.ustatik.com/public/img/product_icons/ug/apple-touch-icon-96x96.png"
+      }, {
+         "size": 128,
+         "url": "https://cdn.ustatik.com/public/img/product_icons/ug/apple-touch-icon-168x168.png"
+      }, {
+         "size": 144,
+         "url": "https://cdn.ustatik.com/public/img/product_icons/ug/apple-touch-icon-168x168.png"
+      }, {
+         "size": 168,
+         "url": "https://cdn.ustatik.com/public/img/product_icons/ug/apple-touch-icon-192x192.png"
+      }, {
+         "size": 256,
+         "url": "https://cdn.ustatik.com/public/img/product_icons/ug/apple-touch-icon-512x512.png"
+      }, {
+         "size": 512,
+         "url": "https://cdn.ustatik.com/public/img/product_icons/ug/apple-touch-icon-512x512.png"
+      } ],
+      "theme_color": "rgba(39,39,39,1)"
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "144": "icons/144.png",
+      "168": "icons/168.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "512": "icons/512.png",
+      "64": "icons/64.png",
+      "72": "icons/72.png",
+      "96": "icons/96.png"
+   },
+   "key": "40b+oGYXJkmX2cABXnZXIJ844hqkWR91NyBs2qkeIEU=",
+   "name": "Ultimate Guitar Tabs",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "https://tabs.ultimate-guitar.com/*" ],
+         "title": "Ultimate Guitar Tabs"
+      }
+   },
+   "version": "2020.1.14.60198"
+}

@@ -1,0 +1,5 @@
+3b
+archlinux
+convolutional
+dev
+checksum_v1 = 6fe6ceec7b60b41946d01baba133a822

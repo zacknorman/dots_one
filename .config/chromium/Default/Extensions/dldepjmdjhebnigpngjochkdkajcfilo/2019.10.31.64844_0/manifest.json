@@ -1,0 +1,26 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://docs.google.com/presentation/u/0/"
+      },
+      "linked_icons": [  ]
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "VcfK+9bfXYpYz9VEzoNSJ/ikZ/3XmkMFyRTUSCQF9cs=",
+   "name": "Google Slides",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "https://docs.google.com/presentation/u/0/*" ],
+         "title": "Google Slides"
+      }
+   },
+   "version": "2019.10.31.64844"
+}

@@ -1,0 +1,24 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "js/background.js" ]
+      }
+   },
+   "icons": {
+      "128": "img/icon_128.png",
+      "32": "img/icon_32.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgbhuS4X9T9Vsf7eoWt/u1pgK5qWM8ZIqGRcQlO0c85C4oSkPgTaHfyfGEUHVfJd23wGKy5l1aRkGmK3kCLM0Wp9Cx5CGTDqUAHFqDgER7qDtwyVIjC3F5KM6X+X0V3k9KDLD1Im1RgoWjfiVTE8bE9gscTRVdBJdEmUiHHWZQdPMhPJwB15LuoBbrtZsJbjwsqezO4egj3KZobOAIw9wjVM2hWL2E9wolN+/TjMM0/4QdlpiH7QT5W8fp46OEpLmbUQvouUJeU/p2jLQOyMOvjXfB2fhHlnPy0nvwMYM86dmXoyMnQGcf5b3dwjvOCPffe/uHMi2I3BhBT3UD3L1BwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "33",
+   "name": "Owl Reminder for Google Calendar™",
+   "oauth2": {
+      "client_id": "675106829084-thhis2k3kqoip0919mmc4v29vncu125o.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/calendar.readonly" ]
+   },
+   "offline_enabled": true,
+   "permissions": [ "idle", "notifications", "alarms", "storage", "identity", "gcm", "contextMenus", "https://accounts.google.com/*", "https://www.googleapis.com/*" ],
+   "short_name": "Owl Reminder",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.4"
+}

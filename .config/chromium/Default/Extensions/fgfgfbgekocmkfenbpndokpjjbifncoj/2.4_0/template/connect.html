@@ -1,0 +1,46 @@
+<div class="container" ng-controller="connect">
+  <div class="leftPanel">
+    <nav class="nav-sidebar">
+      <ul class="nav">
+        <li>
+          <a href="#/main">
+              Back</a>
+        </li>
+        <li class="active">
+          <a href="#/connect">
+              Connect</a>
+        </li>
+        <li>
+          <a href="#/options">
+              Options</a>
+        </li>
+        <li>
+          <a href="#/about">
+              About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="rightPanel">
+    <section>
+      <button class="btn btn-default" ng-click="signButton()">{{status.connected ? "Revoke" : "Connect"}}</button>
+      <span style="opacity:0.8;">{{status.connected ? "Connected " + status.primaryCalendar : "Connect with your Google Calendar"}}
+      </span>
+    </section>
+    <br>
+    <div ng-show="status.connected">
+      <input type="checkbox" class="calendar-checkbox" ng-change="allCalendar(enableAll)" ng-model="enableAll" title="Select or deselect all calendars">
+      <span style="font-size:16px">
+        <strong>Calendar List</strong>
+      </span>
+      <div class="calendarTable">
+        <label class="calendarRow" ng-repeat="(name,calendar) in calendars">
+          <input type="checkbox" class="calendar-checkbox" ng-style="setCalendarColor(calendar)" ng-model="calendar.enabled">
+          <span ng-style="setOpacity(calendar.enabled)">{{calendar.summary}}
+            <small style="margin:0px 5px;">{{name | emailFilter}}</small>
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

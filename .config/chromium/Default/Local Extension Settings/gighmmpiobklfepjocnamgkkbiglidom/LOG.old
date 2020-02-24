@@ -1,0 +1,29 @@
+2020/02/24-10:47:47.518 917 Reusing MANIFEST /home/zack/.config/chromium/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/MANIFEST-000001
+2020/02/24-10:47:47.518 917 Recovering log #569
+2020/02/24-10:47:47.518 917 Reusing old log /home/zack/.config/chromium/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/000569.log 
+2020/02/24-10:48:48.128 eb6 Level-0 table #573: started
+2020/02/24-10:48:48.171 eb6 Level-0 table #573: 4959417 bytes OK
+2020/02/24-10:48:48.173 eb6 Delete type=0 #569
+2020/02/24-10:48:59.143 eb6 Level-0 table #575: started
+2020/02/24-10:48:59.179 eb6 Level-0 table #575: 4959543 bytes OK
+2020/02/24-10:48:59.181 eb6 Delete type=0 #572
+2020/02/24-10:49:00.044 eb6 Level-0 table #577: started
+2020/02/24-10:49:00.085 eb6 Level-0 table #577: 4959996 bytes OK
+2020/02/24-10:49:00.087 eb6 Delete type=0 #574
+2020/02/24-10:49:00.088 eb6 Compacting 4@0 + 2@1 files
+2020/02/24-10:49:00.164 eb6 Generated table #578@0: 1 keys, 4959996 bytes
+2020/02/24-10:49:00.165 eb6 Generated table #579@0: 7 keys, 518 bytes
+2020/02/24-10:49:00.165 eb6 Compacted 4@0 + 2@1 files => 4960514 bytes
+2020/02/24-10:49:00.167 eb6 compacted to: files[ 0 2 1 0 0 0 0 ]
+2020/02/24-10:49:00.167 eb6 Delete type=2 #577
+2020/02/24-10:49:00.167 eb6 Delete type=2 #575
+2020/02/24-10:49:00.167 eb6 Delete type=2 #570
+2020/02/24-10:49:00.167 eb6 Delete type=2 #573
+2020/02/24-10:49:00.167 eb6 Delete type=2 #567
+2020/02/24-10:49:00.167 eb6 Delete type=2 #568
+2020/02/24-10:49:55.700 eb6 Level-0 table #581: started
+2020/02/24-10:49:55.739 eb6 Level-0 table #581: 4959996 bytes OK
+2020/02/24-10:49:55.741 eb6 Delete type=0 #576
+2020/02/24-10:49:55.902 eb6 Level-0 table #583: started
+2020/02/24-10:49:55.937 eb6 Level-0 table #583: 4960016 bytes OK
+2020/02/24-10:49:55.939 eb6 Delete type=0 #580

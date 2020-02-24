@@ -1,0 +1,26 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://agar.io/"
+      },
+      "linked_icons": [  ]
+   },
+   "description": "Eat cells smaller than you and don't get eaten by the bigger ones, as an MMO",
+   "icons": {
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "ZARmpYBc1xMuXotHyKFamPOhwQxjTyXcvKsA9572Kx0=",
+   "name": "Agar.io",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "http://agar.io/*" ],
+         "title": "Agar.io"
+      }
+   },
+   "version": "2020.2.24.58436"
+}

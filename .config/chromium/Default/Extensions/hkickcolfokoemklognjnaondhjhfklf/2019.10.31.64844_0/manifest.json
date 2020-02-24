@@ -1,0 +1,26 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://www.khanacademy.org/"
+      },
+      "linked_icons": [  ]
+   },
+   "description": "Learn for free about math, art, computer programming, economics, physics, chemistry, biology, medicine, finance, history, and more. Khan Academy is a nonprofit with the mission of providing a free, world-class education for anyone, anywhere.",
+   "icons": {
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "G3Su4oCnSn8GOKpaUfvfI7dT1Jt29AtAPTnfHdvMDe4=",
+   "name": "Khan",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "https://www.khanacademy.org/*" ],
+         "title": "Khan"
+      }
+   },
+   "version": "2019.10.31.64844"
+}

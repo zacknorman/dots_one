@@ -1,0 +1,26 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://scribble.wreally.com/#sync"
+      },
+      "linked_icons": [  ]
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "whw5MnMzG+HTbIwxTjDrR+I9UiasrMhu8a5DCBHe8GA=",
+   "name": "Scribble - Stickies on Steroids.",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "http://scribble.wreally.com/*" ],
+         "title": "Scribble - Stickies on Steroids."
+      }
+   },
+   "version": "2019.10.31.64844"
+}

@@ -1,0 +1,199 @@
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1.0;
+}
+.heading-div {
+  width: 100%;
+  height: 25px;
+  padding-top: 5px;
+}
+.sync-string {
+  opacity: 0.5;
+}
+.current-div {
+  padding: 5px 20px 0px 15px;
+  height: 95px;
+}
+.setting-div {
+  margin: 10px 20px 0px 20px;
+}
+.button-div {
+  float: right;
+  margin: 0px 10px;
+}
+.container {
+  padding: 0px;
+  width: 100%;
+}
+.glyphicon {
+  margin: 0 5px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.setting-icon {
+  color: #666666;
+  margin-left: 10px;
+}
+.setting-icon:hover, .setting-icon:focus {
+  color: #bbbbbb;
+  text-decoration: none;
+}
+.selected {
+  background-color: #e8edff;
+}
+.panel-footer {
+  padding: 8px 15px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+.fieldRow {
+  padding-bottom: 6px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.bellIcon {
+  font-size: 1.1em;
+  color: #F9BF3B;
+}
+.mapIcon {
+  font-size: 1.1em;
+  color: #3498db;
+}
+.videoIcon {
+  font-size: 1.1em;
+  color: #26A65B;
+}
+.infoIcon {
+  font-size: 1.1em;
+  color: #95a5a6;
+}
+.divTable {
+  width: auto;
+  position: fixed;
+  top: 125px;
+  bottom: 60px;
+  left: 10px;
+  right: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #dddddd;
+}
+table {
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+td {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.calendarTable {
+  position: fixed;
+  top: 90px;
+  bottom: 20px;
+  left: 130px;
+  right: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 0px;
+  line-height: 2.0;
+}
+.calendarRow {
+  float: left;
+  display: table-row;
+  min-width: 350px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  position: relative;
+  vertical-align: text-bottom;
+  bottom: 1px;
+}
+input[type=checkbox] {
+  position: relative;
+  vertical-align: text-bottom;
+  bottom: 1px;
+  margin: 0px 5px;
+}
+.calendar-checkbox {
+  -webkit-appearance: none;
+  vertical-align: bottom;
+  height: 15px;
+  width: 15px;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+}
+.calendar-checkbox:checked {
+  background: #26A65B;
+  border: 0px;
+}
+.selected-a {
+  border-bottom: 1px solid #ccc;
+}
+.nav-sidebar {
+  width: 100%;
+  padding: 0px;
+  /*padding: 8px 0;*/
+  /*border-right: 1px solid #ddd;*/
+}
+.nav-sidebar a {
+  color: #333;
+  -webkit-transition: all 0.08s linear;
+  -moz-transition: all 0.08s linear;
+  -o-transition: all 0.08s linear;
+  transition: all 0.08s linear;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  /*border-radius: 4px 0 0 4px;*/
+  border-radius: 0;
+  /*padding: 10px 5px;*/
+}
+.nav-sidebar .active a {
+  cursor: default;
+  background-color: #428bca;
+  color: #fff;
+  text-shadow: 1px 1px 1px #666;
+}
+.nav-sidebar .active a:hover {
+  background-color: #428bca;
+}
+.nav-sidebar .text-overflow a, .nav-sidebar .text-overflow .media-body {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.leftPanel {
+  position: fixed;
+  height: 100%;
+  width: 100px;
+  margin-top: 20px;
+}
+.rightPanel {
+  position: fixed;
+  height: 100%;
+  left: 110px;
+  margin: 20px;
+}
+.settingText {
+  float: left;
+  width: 180px;
+  position: relative;
+  bottom: -8px;
+}
+p {
+  color: #555;
+}
+section {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+}

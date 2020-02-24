@@ -1,0 +1,23 @@
+{
+   "app": {
+      "background": {
+         "persistant": false,
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "An intuitively light-weight and simple to use steganography app to hide and reveal secret messages within images.",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlOzbZNusLg8+uDEFw0xHWVZiXgn8roVVh+oTeNde0arnSPDnmyFFKAHWTW2VNrQh2O/PDdRBOxt906PrAjlqqm+kTCcqFuGiDiL6mkl4CNm3lAzLO7mOiH5Y6AfhXq7lGnS2rRNRj+2UDFqrNbkBDMi6ciCWnKD+2dxsfy/jW5vr+gpNsw4S67cpIoqkdshSDCaYM0Kk/tQZH9pvyaWcR1pG1ZKBo6GW+Md2il6TsqWGgaMKKy+gmWTVICoPuxV3m3U+P4yzKE/bf2cRHIvSSw6Do8d1ii42Prq1IGBneefHvCehFIsnKA+fLA0Fr83hOQ3uMSycEJEiEZPP1zSZ0QIDAQAB",
+   "manifest_version": 2,
+   "name": "Ultraviolet",
+   "permissions": [ "fileSystem", {
+      "fileSystem": [ "write" ]
+   }, "storage", "app.window" ],
+   "short_name": "Ultraviolet",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SketchPad</title>
+	<style>
+		* { -webkit-user-select: none; font-family: arial, sans-serif; touch-action: none;}
+
+		body {
+			max-width: 455px;
+			font-size: 14px;
+			transition: background-color 0.3s ease;
+		}
+
+		#pad {
+			background-color: white;
+			border: 2px solid #EEE;
+		}
+
+		#menu {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			text-align: center;
+			font-size: 18px;
+			color: black;
+		}
+
+		.settingsButton {
+			padding: 6px 12px;
+			line-height: 20px;
+			margin: 2px;
+			background-color: #AEAEAE;
+			box-shadow: 0 5px 0 0 #8A8A8A;
+			cursor: pointer;
+		}
+
+		#clearButton {
+			background-color: #FF5252;
+			box-shadow: 0 5px 0 0 #B33939;
+		}
+
+		#saveButton {
+			background-color: #85E0FF;
+			box-shadow: 0 5px 0 0 #5D9DB2;
+		}
+
+		#drawButton {
+			background-color: #0BE881;
+			box-shadow: 0 5px 0 0 #05C46B;
+		}
+
+		#colorBox {
+			display: inline-block;
+			margin-left: 2px;
+		}
+
+		#colorBoxTop, #colorBoxBottom {
+			width: 50px;
+			height: 25px;
+			background-color: black;
+		}
+
+		#colorPicker {
+			cursor: crosshair;
+			display: inline-block;
+			vertical-align: baseline;
+			float: right;
+			margin-right: 2px;
+		}
+
+		.settingsButton:active, #saveButton:active, #clearButton:active, #drawButton:active {
+			margin-top: 7px !important;
+			margin-bottom: -3px !important;
+			box-shadow: 0 0px 0 0 #8A8A8A !important;
+		}
+
+		#penSettings {
+			margin-top: 8px;
+			margin-bottom: -6px;
+			vertical-align: middle;
+			height: 42px;
+		}
+
+		#penSliderPanel {
+			vertical-align: top;
+			line-height: 36px;
+			font-size: 18px;
+			padding-left: 4px;
+		}
+
+		#penSize {
+			vertical-align: middle;
+			margin-top: -0.5px;
+		}
+
+		#eyeDropper {
+			display: inline-block;
+			vertical-align: bottom;
+			padding-left: 0px;
+			padding-right: 0px;
+			width: 50px;
+			text-align: center;
+		}
+
+		#eyeDropper > img {
+			margin-top: 1px;
+			margin-bottom: -5px;
+			padding: 0;
+		}
+
+		#eyeDropper:active {
+			margin-bottom: 0 !important;
+		}
+
+		#penSettings > div {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		#penSliderPanel {
+			margin-top: 5px;
+		}
+
+		.history {
+			width: 25px;
+			height: 25px;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		/* For all you dark mode lovers (me included) */
+		@media (prefers-color-scheme: dark) {
+			body {
+				background-color: rgb(58, 58, 58);
+			}
+
+			#penSettings {
+				color: white;
+			}
+
+			#pad {
+				border: 2px solid rgb(41, 42, 45);
+			}
+		}
+	</style>
+</head>
+<body>
+	<canvas id="pad" width="450" height="400"></canvas>
+	<!--<canvas id="overlay" width="450" height="400"></canvas>-->
+	<div id="menu">
+		<div id="drawButton" class="settingsButton">Draw</div>
+		<div id="bucketButton" class="settingsButton">Bucket</div>
+		<div id="eraserButton" class="settingsButton">Eraser</div>
+		<div id="saveButton" class="settingsButton">Save</div>
+		<div id="clearButton" class="settingsButton">Clear</div>
+		<!-- <input type="checkbox" id="fillType"> Fill Entire Canvas -->
+	</div>
+
+	<div id="penSettings">
+		<div id="eyeDropper" class="settingsButton">
+			<img src="dropper.svg" width="24px">
+		</div>
+
+		<div id="undo" class="settingsButton history" style="background-image: url('undo.svg');"></div>
+		<div id="redo" class="settingsButton history" style="background-image: url('redo.svg');"></div>
+
+		<div id="penSliderPanel">
+			Pen Size:
+			<input type="range" min="1" max="80" value="6" id="penSize">
+		</div>
+	</div>
+
+	<!--<p id="colorValue">Color Value</p>-->
+	<br><div id="colorBox">
+		<div id="colorBoxTop"></div>
+		<div id="colorBoxBottom"></div>
+	</div>
+		<canvas id="colorPicker" height="50px" width="390px"></canvas>
+</body>
+<script src="sketch.js"></script>
+<script type="text/javascript" src="floodfill.min.js"></script>
+</html>

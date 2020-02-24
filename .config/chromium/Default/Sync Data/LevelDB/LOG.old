@@ -1,0 +1,6 @@
+2020/02/24-10:47:46.897 8e0 Reusing MANIFEST /home/zack/.config/chromium/Default/Sync Data/LevelDB/MANIFEST-000001
+2020/02/24-10:47:46.899 8e0 Recovering log #93
+2020/02/24-10:47:46.903 8e0 Reusing old log /home/zack/.config/chromium/Default/Sync Data/LevelDB/000093.log 
+2020/02/24-10:47:54.799 eb6 Level-0 table #97: started
+2020/02/24-10:47:54.802 eb6 Level-0 table #97: 112993 bytes OK
+2020/02/24-10:47:54.804 eb6 Delete type=0 #93

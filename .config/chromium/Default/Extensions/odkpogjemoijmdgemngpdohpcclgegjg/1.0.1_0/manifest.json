@@ -1,0 +1,19 @@
+{
+   "app": {
+      "launch": {
+         "container": "tab",
+         "web_url": "http://stars.chromeexperiments.com/"
+      },
+      "urls": [ "http://stars.chromeexperiments.com/" ]
+   },
+   "description": "An interactive 3D visualization of the stellar neighborhood, including over 100,000 nearby stars.",
+   "icons": {
+      "128": "100k-stars.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjoEeHdIz3S4Mg8ub/82EJPilgb1Go+l8pTaqTw4iI6ixE37Yq7SSp5C+LaBUK/8qm82CX33Spgz8AsEDSJv61rSxAN/Gl2N2k5hXeDbzqCHvrGl0O8Usm1/xyKsWTcR20l06IRrVNFrUL3qjXPdsSB3zK9rBe2+M1cH7eFXwtDDESwCalmY140I9JT2psorvRzme/g0su/TBhrdFlQDDAsnR+cn+ygk7Ra/zlNuQgLtF4mxZNrCN0BY44QvGVJkKhVR/jYTgBIUdR5kEO5HWf7P0kN2uh8TLViKQuTzGnhBbK6EELffLYizeRLH/dnX0P9mDIEdcNbLxbh5rT2T3DwIDAQAB",
+   "manifest_version": 2,
+   "name": "100,000 Stars",
+   "offline_enabled": false,
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1"
+}

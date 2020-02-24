@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>todoist</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/browser.js"></script>
+</head>
+<body class="loading">
+<div id="controls">
+
+    <button id="terminate" title="Simulate Crash">Test</button>
+
+    <form id="location-form">
+        <div id="center-column">
+            <input id="location" type="text">
+            <input id="debug" type="text">
+        </div>
+    </form>
+
+</div>
+
+<webview style="width:640px; height:480px" partition="persist:todoist">
+
+</webview>
+
+<div id="sad-webview">
+    <div id="sad-webview-icon">&#9762;</div>
+    <h2 id="crashed-label">Aw, Snap!</h2>
+
+    <h2 id="offline-label">Your computer is offline</h2>
+
+    <p>Something went wrong while displaying todoist. To continue, <a href="#" onclick="window.location.reload()">reload the app</a>.</p>
+</div>
+
+<div id="loading">
+    <img src="images/d465d1716a3460734581967d428fb4ce.gif" width="43" height="11">
+</div>
+
+</body>
+</html>

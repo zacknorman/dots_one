@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Add MY Documents</title>
+	<link href="css/index.css" rel="stylesheet">
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div style="-webkit-app-region: drag" class="custom-frame-class">
+		<ul class="drop_menu">
+			<li><a href='#'><span class="modal-awesome-close" style="-webkit-app-region:  no-drag"></span></a></li>
+			<li style="display:none"><a href='#'><span class="modal-awesome-full" style="-webkit-app-region:  no-drag"></span></a></li>
+			<li style="display:none"><a href='#'><span class="modal-awesome-max" style="-webkit-app-region:  no-drag"></span></a></li>
+			<li><a href='#'><span class="modal-awesome-minus" style="-webkit-app-region:  no-drag"></span></a></li>
+			<li><a href='#'><span class="modal-awesome-about" style="-webkit-app-region:  no-drag"></span></a></li>
+			<li style="display:none"><a href='#'><span class="modal-awesome-dialog" style="-webkit-app-region:  no-drag"></span></a>
+				<ul>
+					<li><a href='#'><span class="modal-awesome-file submenu" style="-webkit-app-region:  no-drag"><label>File</label></span></a></li>
+					<li><a href='#'><span class="modal-awesome-folder submenu" style="-webkit-app-region:  no-drag"><label>Folder</label></span></a></li>		
+				</ul>
+			</li>
+			<li style="display:none"><a href='#'><span class="modal-awesome-omenu" style="-webkit-app-region:  no-drag"></span></a>
+				<ul>
+					<li style="display:none"><a href='#'><span class="modal-awesome-pin submenu" style="-webkit-app-region:  no-drag"><label>Always on Top</label></span></a></li>
+					<li><a href='#'><span class="modal-awesome-about submenu" style="-webkit-app-region:  no-drag"><label>About</label></span></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="main-container">
+	    <div style="padding-top: 12px;height: 48px;box-sizing: border-box;">
+            <input type="text" id="folder-name-input" value=""><button id="create-button">Create</button>
+	    </div>
+        <div id="mount-folder-container">
+        </div>
+	</div>
+    <div id="aboutModal" class="modalDialog">
+        <div class="aboutcontainer">
+            <span id="about-close" style="-webkit-app-region:  no-drag">X</span>
+            <div id="about-message-container">
+                <div>
+                    <p>
+                        <h3>Add MY Documents</h3>
+                        <h3>(c) Kunihiro Ando</h3>
+                        <a href="http://opensource.org/licenses/BSD-3-Clause" target="_blank">BSD License</a><br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

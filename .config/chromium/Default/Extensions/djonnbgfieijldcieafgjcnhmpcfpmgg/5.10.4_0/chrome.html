@@ -1,0 +1,78 @@
+<!doctype html>
+
+
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Polarr Photo Editor</title>
+    <meta id="meta_viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'BlinkMacSystemFont', -apple-system, system, sans-serif;
+        font-size: 12px;
+        overflow: hidden;
+        position: relative;
+      }
+      #splash {
+        background-color: rgb(30,30,30);
+        font-size: 13px;
+        text-align: center;
+        line-height: 1.5em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99999998;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        transition: opacity 0.3s ease-out;
+      }
+      .logo {
+        width: 300px;
+        height: 200px;
+        background-image: url("img/sample_images/logo-large.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
+    <style id="theme"></style>
+    <meta id="theme-color" name="theme-color" content="rgb(30, 30, 30)">
+  </head>
+  <body>
+    <div id="support"></div>
+
+    <div id="splash">
+      
+      <div class="logo"></div>
+      
+    </div>
+
+    <div id="app"></div>
+
+    <script src="js/config/chrome.js"></script>
+
+    
+    <script src="js/google-analytics-bundle-polarr-mod.js"></script>
+    
+
+    <script src="js/splash.js"></script>
+
+    
+  </body>
+</html>

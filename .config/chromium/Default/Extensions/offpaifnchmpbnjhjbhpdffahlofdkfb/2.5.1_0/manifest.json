@@ -1,0 +1,21 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://scribble.wreally.com"
+      },
+      "urls": [ "http://scribble.wreally.com/" ]
+   },
+   "description": "Dead simple note taking. With offline access and notifications.",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "48": "icon_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDUfQA8wnZKQ0IlUAkqNVUSIcbtL93Vg8wtk+kw5wrtNredgqwGb1eG254bnqHEub2F4nflxzKFKC4NHPgtGsymfDtuFeozZJ4QuZBFr1M/xmTU7l8DqvOwXI2993e9CnUsSP7wSH63P2U0+jIaoxv2/0M6hak71gTUatBc56075wIDAQAB",
+   "manifest_version": 2,
+   "name": "Scribble - stickies on steroids",
+   "offline_enabled": true,
+   "permissions": [ "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.5.1"
+}

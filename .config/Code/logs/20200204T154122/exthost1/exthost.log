@@ -1,0 +1,26 @@
+[2020-02-04 15:41:23.798] [exthost] [info] extension host started
+[2020-02-04 15:41:23.813] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-02-04 15:41:23.814] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-02-04 15:41:23.818] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-02-04 15:41:23.818] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/emmet/dist/extension
+[2020-02-04 15:41:23.838] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.git","_lower":"vscode.git"},"activationEvent":"*"}
+[2020-02-04 15:41:23.838] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2020-02-04 15:41:23.878] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-02-04 15:41:23.878] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2020-02-04 15:41:23.881] [exthost] [info] ExtensionService#_doActivateExtension dlasagno.wal-theme {"startup":true,"extensionId":{"value":"dlasagno.wal-theme","_lower":"dlasagno.wal-theme"},"activationEvent":"*"}
+[2020-02-04 15:41:23.881] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/zack/.vscode/extensions/dlasagno.wal-theme-1.0.3/out/extension.js
+[2020-02-04 15:41:23.887] [exthost] [info] ExtensionService#_doActivateExtension Equinusocio.vsc-material-theme {"startup":true,"extensionId":{"value":"Equinusocio.vsc-material-theme","_lower":"equinusocio.vsc-material-theme"},"activationEvent":"*"}
+[2020-02-04 15:41:23.887] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/zack/.vscode/extensions/equinusocio.vsc-material-theme-30.0.0/out/src/material.theme.config
+[2020-02-04 15:41:23.891] [exthost] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme {"startup":true,"extensionId":{"value":"PKief.material-icon-theme","_lower":"pkief.material-icon-theme"},"activationEvent":"*"}
+[2020-02-04 15:41:23.891] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/zack/.vscode/extensions/pkief.material-icon-theme-3.9.2/dist/extension
+[2020-02-04 15:41:23.901] [exthost] [info] eager extensions activated
+[2020-02-04 15:41:34.271] [exthost] [info] ExtensionService#_doActivateExtension James-Yu.latex-workshop {"startup":false,"extensionId":{"value":"James-Yu.latex-workshop","_lower":"james-yu.latex-workshop"},"activationEvent":"onLanguage:pdf"}
+[2020-02-04 15:41:34.271] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/zack/.vscode/extensions/james-yu.latex-workshop-8.7.1/out/src/main.js
+[2020-02-04 15:42:25.055] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools {"startup":false,"extensionId":{"value":"ms-vscode.cpptools","_lower":"ms-vscode.cpptools"},"activationEvent":"onLanguage:c"}
+[2020-02-04 15:42:25.055] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/zack/.vscode/extensions/ms-vscode.cpptools-0.26.3/dist/main
+[2020-02-05 00:25:56.827] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"extensionId":{"value":"vscode.configuration-editing","_lower":"vscode.configuration-editing"},"activationEvent":"onLanguage:jsonc"}
+[2020-02-05 00:25:56.827] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/configuration-editing/dist/extension
+[2020-02-05 00:25:56.831] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"extensionId":{"value":"vscode.json-language-features","_lower":"vscode.json-language-features"},"activationEvent":"onLanguage:jsonc"}
+[2020-02-05 00:25:56.831] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/json-language-features/client/dist/jsonMain
+[2020-02-05 00:25:56.857] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:jsonc"}
+[2020-02-05 00:25:56.857] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/typescript-language-features/dist/extension

@@ -1,0 +1,103 @@
+<div class="container" ng-controller="options">
+  <div class="leftPanel">
+    <nav class="nav-sidebar">
+      <ul class="nav">
+        <li>
+          <a href="#/main">
+              Back</a>
+        </li>
+        <li>
+          <a href="#/connect">
+              Connect</a>
+        </li>
+        <li class="active">
+          <a href="#/options">
+              Options</a>
+        </li>
+        <li>
+          <a href="#/about">
+              About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="rightPanel">
+    <div>
+      <label>
+        <span class="settingText">Sync future events</span>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+            {{setting.futureDay + ' days'}}
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a ng-click="setting.futureDay=1">1 day</a>
+            </li>
+            <li><a ng-click="setting.futureDay=2">2 days</a>
+            </li>
+            <li><a ng-click="setting.futureDay=3">3 days</a>
+            </li>
+            <li><a ng-click="setting.futureDay=7">7 days</a>
+            </li>
+          </ul>
+        </div>
+      </label>
+    </div>
+    <div>
+      <label>
+        <span class="settingText" title="Show snooze button in notification">Notification snooze</span>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+            {{convertTimeString(setting.snoozeTime*60, 'Disabled')}}
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a ng-click="setting.snoozeTime=0;">Disabled</a>
+            </li>
+            <li><a ng-click="setting.snoozeTime=5;">5 minutes</a>
+            </li>
+            <li><a ng-click="setting.snoozeTime=10;">10 minutes</a>
+            </li>
+            <li><a ng-click="setting.snoozeTime=30;">30 minutes</a>
+            </li>
+            <li><a ng-click="setting.snoozeTime=60;">1 hour</a>
+            </li>
+          </ul>
+        </div>
+      </label>
+    </div>
+    <div>
+      <label>
+        <span class="settingText" title="When the notification should popup">Notification time</span>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+            {{convertTimeString(setting.reminderTime*60, 'On time')}}
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a ng-click="setting.reminderTime=0">On time</a>
+            </li>
+            <li><a ng-click="setting.reminderTime=15">15 minutes before</a>
+            </li>
+            <li><a ng-click="setting.reminderTime=30">30 minutes before</a>
+            </li>
+            <li><a ng-click="setting.reminderTime=60">1 hours before</a>
+            </li>
+            <li><a ng-click="setting.reminderTime=1440">1 day before</a>
+            </li>
+          </ul>
+        </div>
+      </label>
+    </div>
+    <div>
+      <label>
+        <span class="settingText" title="If disabled, the notification will popup silently">Notification sound</span>
+        <div id="radioBtn" class="btn-group">
+          <button class="btn btn-default btn-sm" ng-class="{active: setting.sound}" ng-click="setting.sound=true;">Yes</button>
+          <button class="btn btn-default btn-sm" ng-class="{active: !setting.sound}" ng-click="setting.sound=false;">No</button>
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+

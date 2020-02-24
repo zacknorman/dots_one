@@ -1,0 +1,8 @@
+[2020-02-09 18:00:54.971] [sharedprocess] [info] main {"machineId":"7f5f2f3805f54d2192af99e5872c84ae8e81a8bea8c0762f8f5a3ccbc15b8720","windowId":2}
+[2020-02-09 18:00:56.373] [sharedprocess] [info] Installing extension: pkief.material-icon-theme
+[2020-02-09 18:00:56.781] [sharedprocess] [info] Downloaded extension: pkief.material-icon-theme /tmp/f233b3d1-2926-42de-940e-2f6c019c8ba4
+[2020-02-09 18:00:57.102] [sharedprocess] [info] Extracted extension to /home/zack/.vscode/extensions/.pkief.material-icon-theme-3.9.3: pkief.material-icon-theme
+[2020-02-09 18:00:57.103] [sharedprocess] [info] Renamed to /home/zack/.vscode/extensions/pkief.material-icon-theme-3.9.3
+[2020-02-09 18:00:57.103] [sharedprocess] [info] Installation completed. pkief.material-icon-theme
+[2020-02-09 18:00:57.117] [sharedprocess] [info] Extensions installed successfully: pkief.material-icon-theme
+[2020-02-09 18:01:34.976] [sharedprocess] [info] Starting to clean up unused language packs.

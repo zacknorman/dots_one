@@ -1,0 +1,26 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://player.spotify.com/"
+      },
+      "linked_icons": [  ]
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "TDuRZrL8OwxA6DVA8jkeQ3Qsca2IalPSbAawRx7H54k=",
+   "name": "Spotify",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "https://player.spotify.com/*" ],
+         "title": "Spotify"
+      }
+   },
+   "version": "2020.2.24.58436"
+}

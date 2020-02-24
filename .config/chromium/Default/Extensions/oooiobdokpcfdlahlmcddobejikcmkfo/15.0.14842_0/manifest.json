@@ -1,0 +1,37 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "externally_connectable": {
+      "matches": [ "*://localhost/*", "http://console.com/*", "*://*.teamviewer.com/*", "*://vai-dev-36:*/*" ]
+   },
+   "icons": {
+      "128": "Styles/img/icon_128.png",
+      "16": "Styles/img/icon_16.png",
+      "48": "Styles/img/icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjVrR8NX87rEZL2u0TroUxSBfZ9Vid7K+QrNGPKAj7NbsQH5x8nmA9xRBeLAeHcO3ejXb2T1H+9bVFuXZX1jSF0ra3NhxVkndnwzTsr4Sh9VmZMe2kMbu6IvkueIw9Pw7jyte9fpsn9u00eqwPUtrhfRAsK4FOgdsqSqqKW0x4JFwI6LnfqlNRZLTWORJLp/4mAwBEFNhCnFnsf+H7IcJWBTc8f5rIuUnUnZnBYVILa5erMLB/NoYOw7eI4niS8LsPkBwuWN27t6JA7XrtqdE5JEP2oHeFS8KgKJyxrSDoiIDIwMqY7ZiiuTwDFgzvzjWPFQtd59JhTQbDfais3xHVwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "38",
+   "name": "__MSG_appName__",
+   "permissions": [ "storage", "unlimitedStorage", {
+      "socket": [ "tcp-connect", "resolve-host", "udp-bind:*:*", "udp-send-to:*:*", "resolve-proxy" ]
+   }, {
+      "fileSystem": [ "write", "retainEntries", "directory" ]
+   }, "system.display", "system.memory", "system.cpu", "clipboardRead", "clipboardWrite", "webview" ],
+   "sockets": {
+      "tcp": {
+         "connect": ""
+      },
+      "udp": {
+         "bind": "*",
+         "send": "*"
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "15.0.14842"
+}

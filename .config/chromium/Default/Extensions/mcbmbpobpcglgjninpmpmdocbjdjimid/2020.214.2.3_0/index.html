@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Word Counter</title>
+        <link rel="stylesheet" href="css/ext/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <div id="helpModal"></div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-xs-9 left-padding">
+                    <label id="wordcount" class="h2">&nbsp;</label>
+                    <!-- <span class="h1"> <span class="small" id="limitCount">&nbsp;</span></span> -->
+                    <span class="h1" id="limitCount">&nbsp;</span>
+                </div>
+                <div class="col-xs-3 right-padding left-padding">
+                    <span class="topRightButtonSet" id="fullscreen" title="Full Screen (F11)">
+                        <span class="svg-icon"></span>
+                    </span>
+                    <span class="topRightButtonSet" id="settingsTitle" title="Options (Ctrl/Cmd + ,)">
+                        <span class="svg-icon"></span>
+                    </span>
+                    <span class="mdButtonSet selected" id="mdEdit" title="Edit (Ctrl/Cmd + E)">
+                        <span class="svg-icon"></span>
+                    </span>
+                    <span class="mdButtonSet" id="mdPreview" title="Preview (Ctrl/Cmd + R)">
+                        <span class="svg-icon"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="col-xs-9 left-padding" id="textCol">
+                    <div class="row-fluid">
+                        <textarea id="textarea" class="form-control limitNormal" rows="15"></textarea>
+                        <span id="mdViewer" tabindex="0"></span>
+                    </div>
+                </div>
+                <div class="col-xs-3 right-padding left-padding " id="settingsCol">
+                    <div class="row-fluid">
+                        <fieldset class="form-group">
+                            <label class=" ">Count:</label><br />
+                            <label class="">
+                                <input type="radio" name="wordsChars" id="words" value="words"> Words
+                            </label>
+                            <label class="">
+                                <input type="radio" name="wordsChars" id="characters" value="characters"> Characters
+                            </label>
+                            <label class="checkbox small">
+                                <input type="checkbox" name="trim" id="trim">Ignore leading &amp; trailing spaces
+                            </label>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label class="input-inline" for="wordLimit"></label>
+                            <input id="wordLimit" class="form-control" type="number" min="0" max="9999" placeholder="0" />
+                            <label class="checkbox small">
+                                <input type="checkbox" name="stopInput" id="stopInput">Limit input
+                            </label>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label class="checkbox">
+                                <input type="checkbox" name="rememberText" id="rememberText">Remember text
+                            </label>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label class="input-inline" for="fontSize">Font Size:</label>
+                            <input id="fontSize" class="form-control" type="number" min="0" max="200" placeholder="20" />
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <label class="checkbox" for="enableMarkdown">
+                                <input type="checkbox" name="enableMarkdown" id="enableMarkdown">Enable Markdown
+                            </label>
+                        </fieldset>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottomBar" class="bar">
+            
+            <a href="http://c306.net/?utm_source=wordCounter%20Chrome%20App&utm_medium=chrome_projects&utm_content=bottombar_homelink&utm_campaign=chrome_projects" target="_blank" class="bottomBarLinks" id="bottomBar_C306" title="About Me - C306"><img src="img/c306.svg" alt="About Me" id="ab16"></a>
+
+            <a href="https://docs.google.com/forms/d/1Io6iamQ5Xlw7FoaffRo_tpGPfw_9GvtT4BaAk7wx3UE/viewform?entry.1545185881=Word+Counter+Notepad+-+Counts+what+you+write&entry.1097111967&entry.1652780603&entry.1210432706=When+I've+got+nothing+else+to+do&entry.1609176506&entry.1997047510=Email+me+when+this+issue+is+resolved" target="_blank" class="bottomBarLinks textLinks" id="bottomBar_feedback" title="Feedback">Give Feedback</a>
+            
+            <a href="https://chrome.google.com/webstore/detail/word-counter-counts-what/hjnjgdaeojdfoajjigipjmdnailbmfje?src=wC&utm_source=wordcounter%20for%20chrome&utm_medium=chrome_projects&utm_content=bottombar&utm_campaign=chrome_projects" title="https://chrome.google.com/webstore/detail/word-counter-counts-what/hjnjgdaeojdfoajjigipjmdnailbmfje" target="_blank" class="bottomBarLinks textLinks" id="bottomBar_chrome_extension" >WordCounter Chrome extension</a>
+
+            <div class="clearFloat"></div>
+            <span id="statusSpan" class="bottomBarLeft"></span>
+        </div>
+        <div id="printable"></div>
+        <div id="helpDiv">
+            <div id="helpDivContents">
+                <span id="keyboardShortcutTitle" class="helpDivTitle">Keyboard Shortcuts</span>
+                <table cellpadding="0" class="helpSectionDiv">
+                    <tbody>
+                        <tr class="cf">
+                            <td class="shortcutKey">
+                                <span class="shortcutKeySymbol">Ctrl</span>
+                                <span class="shortcutKeySeparator">+</span>
+                                <span class="shortcutKeySymbol">P</span>
+                            </td>
+                            <td class="helpDivColon">:</td>
+                            <td class="shortcutDetail"><span class="keyboardAlphabet">P</span>rint text</td>
+                        </tr>
+                        <tr class="cf">
+                            <td class="shortcutKey">
+                                <span class="shortcutKeySymbol">Ctrl</span>
+                                <span class="shortcutKeySeparator">+</span>
+                                <span class="shortcutKeySymbol">S</span>
+                            </td>
+                            <td class="helpDivColon">:</td>
+                            <td class="shortcutDetail"><span class="keyboardAlphabet">S</span>ave text to file</td>
+                        </tr>
+                        <tr class="cf">
+                            <td class="shortcutKey">
+                                <span class="shortcutKeySymbol">Ctrl</span>
+                                <span class="shortcutKeySeparator">+</span>
+                                <span class="shortcutKeySymbol">E</span>
+                            </td>
+                            <td class="helpDivColon">:</td>
+                            <td class="shortcutDetail">Switch to <span class="keyboardAlphabet">E</span>dit mode, focus on text editor</td>
+                        </tr>
+                        <tr class="cf">
+                            <td class="shortcutKey">
+                                <span class="shortcutKeySymbol">Ctrl</span>
+                                <span class="shortcutKeySeparator">+</span>
+                                <span class="shortcutKeySymbol">R</span>
+                            </td>
+                            <td class="helpDivColon">:</td>
+                            <td class="shortcutDetail">P<span class="keyboardAlphabet">r</span>eview formatted <em>Markdown</em> text</td>
+                        </tr>
+                        <tr class="cf">
+                            <td class="shortcutKey">
+                                <span class="shortcutKeySymbol">Ctrl</span>
+                                <span class="shortcutKeySeparator">+</span>
+                                <span class="shortcutKeySymbol"><b>,</b></span>
+                            </td>
+                            <td class="helpDivColon">:</td>
+                            <td class="shortcutDetail">Open/close <em>options</em></td>
+                        </tr>
+                        <tr class="cf">
+                            <td class="shortcutKey">
+                                <span class="shortcutKeySymbol">F11</span>
+                            </td>
+                            <td class="helpDivColon">:</td>
+                            <td class="shortcutDetail">Toggle full-screen mode</td>
+                        </tr>
+                        <tr class="cf">
+                            <td class="shortcutKey">
+                                <span class="shortcutKeySymbol">Esc</span>
+                            </td>
+                            <td class="helpDivColon">:</td>
+                            <td class="shortcutDetail">Close full screen, help, or lose focus from text editor</td>
+                        </tr>
+                        <tr class="cf">
+                            <td class="shortcutKey">
+                                <span class="shortcutKeySymbol">F1</span>
+                                <span class="shortcutKeySeparator">or</span>
+                                <span class="shortcutKeySymbol">?</span>
+                            </td>
+                            <td class="helpDivColon">:</td>
+                            <td class="shortcutDetail">Show these help tips</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div id="deprecationOverlay">
+            <div id="deprecationNotice">
+                <a id="closeDeprecationNotice" href="#closeDeprecationNotice" title="Close this notice and never show again.">Close</a>
+                <p>WordCounter App is going away :(</p>
+                <p>Worry not, because WordCounter is now available as a <a class="deprecationLinks" id="depr_extn" target="_blank" href="https://chrome.google.com/webstore/detail/word-counter-counts-what/hjnjgdaeojdfoajjigipjmdnailbmfje?src=wC&utm_source=wordcounter%20for%20chrome&utm_medium=chrome_projects&utm_content=extensionbanner&utm_campaign=chrome_projects" title="https://chrome.google.com/webstore/detail/word-counter-counts-what/hjnjgdaeojdfoajjigipjmdnailbmfje">Chrome extension</a> with even more features, including a full, Markdown-friendly editor just like this one.</p>
+                <p><a class="deprecationLinks" id="depr_post" target="_blank" href="http://updatenotes.blog/2020/02/14/wordcounter-for-chrome-app-migration?utm_source=wordcounter%20for%20chrome&utm_medium=chrome_projects&utm_content=extension_notification&utm_campaign=wc_app">Read more about the change here.</a></p>
+                <p><a class="deprecationLinks" id="depr_extn" target="_blank" href="https://chrome.google.com/webstore/detail/word-counter-counts-what/hjnjgdaeojdfoajjigipjmdnailbmfje?src=wC&utm_source=wordcounter%20for%20chrome&utm_medium=chrome_projects&utm_content=extensionbanner&utm_campaign=chrome_projects" title="https://chrome.google.com/webstore/detail/word-counter-counts-what/hjnjgdaeojdfoajjigipjmdnailbmfje">Get WordCounter Chrome extension here.</a></p>
+            </div>
+        </div>
+
+        <script src="js/ext/jquery-3.3.1.min.js"></script>
+        <script src="js/ext/bootstrap.min.js"></script>
+        <script src="js/ext/markdown/Markdown.Converter.js"></script>
+        <script src="js/ext/markdown/Markdown.Sanitizer.js"></script>
+        <script src="js/ext/markdown/Markdown.Extra.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

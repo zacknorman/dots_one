@@ -1,0 +1,8 @@
+{
+    "workbench.colorTheme": "Wal",
+    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "\"Operator Mono\"",
+    "editor.fontLigatures": true,
+    "latex-workshop.message.update.show": false,
+    "window.zoomLevel": 0
+}

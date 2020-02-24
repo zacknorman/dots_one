@@ -1,0 +1,283 @@
+@font-face {
+  font-family: 'Awesome';
+  src: url('fontawesome-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	color:deeppink;
+	background: #000;
+  font-family:arial, sans-serif;
+  font-size:13px;
+  outline:none;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.custom-frame-class{
+	text-align: right;
+  margin: 0;
+  padding: 0;
+  height: 27px;
+  width: 100%;
+	z-index: 2147483647;
+  background: black;
+  cursor: pointer !important;
+  box-sizing: border-box;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+}
+.custom-frame-class label{
+  font-family:arial, sans-serif;
+  font-size: 12px;
+  padding-left: 4px;
+  vertical-align: baseline;
+}
+.custom-frame-class span{
+  font-family: 'Awesome';
+  height: 27px;
+  width: 35px;
+  font-size: 16px;
+  margin: -1px 0 0 0;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  transition-property: background;
+  transition-duration: 0.3s;
+  color: #fff;
+  line-height: 27px;
+  white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+}
+.custom-frame-class .drop_menu {
+  padding:0;
+  margin:0;
+  list-style-type:none;
+}
+.custom-frame-class .drop_menu li { 
+  float:right; height: 100%; white-space: nowrap;
+}
+.custom-frame-class .drop_menu li a {
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  box-sizing: border-box;
+  text-align: center;
+}
+.custom-frame-class .drop_menu ul {
+  position:absolute;
+  left:-9999px;
+  top:-9999px;
+  list-style-type:none;
+}
+.custom-frame-class .drop_menu li:hover { 
+  position:relative; 
+}
+.custom-frame-class .drop_menu li:hover ul {
+  left: -120px;
+  top: 26px;
+  padding:0px;
+  padding-bottom: 12px;
+  width: 200px;
+  background: #888;
+  text-indent: 1px;
+}
+.custom-frame-class .drop_menu li:hover ul li{
+  text-align: left;
+}
+.custom-frame-class .drop_menu li:hover ul li a {
+  display:block;
+  width: 200px;
+  text-align: left;
+}
+.custom-frame-class .drop_menu li:hover .custom-frame-class span {
+  font-family: 'Awesome';
+  line-height: 26px;
+  height: 26px;
+  width: 26px;
+  font-size: 16px;
+  padding: 0 2px;
+  z-index: 999999;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  color: #fff;
+}
+.custom-frame-class .submenu{
+  width: 100% !important;
+  display: block !important;
+  margin: 0 !important;
+  text-align: left !important;
+  padding: 2px 6px !important;
+}
+.custom-frame-class .submenu:before{
+  display: inline-block !important;
+  width: 24px !important;
+  text-align: center;
+  vertical-align: bottom;
+}
+.custom-frame-class .submenu:hover{
+  background: darkturquoise !important;
+}
+.custom-frame-class span:hover{
+	background: darkturquoise;
+}
+.custom-frame-class .alwaysontop{
+  color: #f54997 !important;
+}
+.custom-frame-class .modal-awesome-close:before{
+  content: "\f00d";
+}
+.custom-frame-class .modal-awesome-max:before{
+  content: "\f065";
+}
+.custom-frame-class .modal-awesome-minus:before{
+  content: "\f068";
+}
+.custom-frame-class .modal-awesome-pin:before{
+  content: "\f08d";
+}
+.custom-frame-class .modal-awesome-full:before{
+  content: "\f0b2";
+}
+.custom-frame-class .modal-awesome-omenu:before{
+  content: "\f0c9";
+}
+.custom-frame-class .modal-awesome-about:before{
+  content: "\f129";
+}
+.custom-frame-class .modal-awesome-dialog:before{
+  content: "\f052";
+}
+.custom-frame-class .modal-awesome-file:before{
+  content: "\f0f6";
+}
+.custom-frame-class .modal-awesome-folder:before{
+  content: "\f07c";
+}
+.main-container{
+    text-align: center;
+	
+    width: 100%;
+    height: calc(100% - 27px);
+}
+.main-container button{
+    border: 1px solid deeppink;
+
+    border-color: cyan;
+    background: inherit;
+    color: cyan;
+    margin: 2px 2px;
+    font-size: 13px;
+    width: 64px;
+    height: 23px;
+    cursor: pointer;
+}
+.main-container label{
+    font-weight:bold;
+    font-size: 15px;
+    padding-left: 6px;
+}
+#create-button{
+  width: 72px;
+  height: 25px;
+  background: #ccc;
+  color: #000;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+#folder-name-input{
+  width: 292px;
+  height: 23px;
+  padding: 0px 1px;
+  outline: none;
+  border-radius: 3px;
+  color: #000;
+  background: #fff;
+  border: #aaa 1px solid;
+  font-size: 13px;
+  font-family: arial, sans-serif;
+  z-index: 3;
+}
+#mount-folder-container{
+    width: 93%;
+    height: 203px;
+    margin: 0 auto;
+    overflow-y: auto;
+    border: 1px solid deeppink;
+    border-color: #666;
+    margin-top: 8px;
+}
+.mount-button{
+    
+}
+.folder-item{
+    text-align: left;
+    
+    padding: 6px 6px;
+    white-space: nowrap;   text-overflow: ellipsis;   overflow: hidden;
+    font-size: 13px;
+}
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(44,44,44,1);
+    z-index: 2147483646;
+    opacity:1;
+    display: none;
+}
+#about-close{
+    background: #888;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 2px;
+    z-index: 2147483647;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    font-size: 13px;
+}
+#about-close:hover{
+    background: orange;
+}
+#about-message-container{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+#about-message-container h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+#about-message-container h3 span{
+    font-size: 13px;
+    font-weight: normal;
+}
+#about-message-container p{
+    margin: 6px 6px 6px 18px;
+}
+.aboutcontainer{
+    width: 280px;
+    height: 230px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 6px;
+    position: relative;
+    overflow-y: auto;
+}

@@ -1,0 +1,26 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://www.codecademy.com/"
+      },
+      "linked_icons": [  ]
+   },
+   "description": "Learn to code interactively, for free.",
+   "icons": {
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "rsL+QLGbi0Da5skNcsPOwcsWrem35I6NYyPDL9Fw2UI=",
+   "name": "Learn to code | Codecademy",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "https://www.codecademy.com/*" ],
+         "title": "Learn to code | Codecademy"
+      }
+   },
+   "version": "2019.10.31.64844"
+}

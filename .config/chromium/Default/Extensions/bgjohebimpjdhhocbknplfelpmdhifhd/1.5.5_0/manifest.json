@@ -1,0 +1,20 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "scripts/app.js" ]
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "images/todoist_128.png",
+      "16": "images/todoist_16.png",
+      "256": "images/todoist_256.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhcU632s9+VRt3WR1vu5RLy/Q/c7ygY/PrQH9clb+1CNKAo/OOJjCgmg4bVhGfBW3crWOA3gyB9mirMLvft6J/rzajSrIMtZPm5J0yKymQAryhvt9mD4EZg166sDBMcsPKRtItdK60CMptzOV+zLrtgJVLTUMppYnsbMYRSKmeElgVVO5bItuTAf4nv7OdnrhDb9NaOY84L2BLF8Dt+JvikbYXhsXtOuI55RwFpevnDjL3rMa/m2ai/a6E9BGCh+YS1dcf7PVwR+uSkBvri3kOzg53J21S25qcHAJiQnn33TQXYNBLkymP7COuE4jMn1jxX+dJcNbjfISKC0rSX8UUwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "permissions": [ "webview", "notifications", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.5"
+}

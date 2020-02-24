@@ -1,0 +1,102 @@
+<div class="container" ng-controller="main">
+  <div class="heading-div">
+    <div class="button-div">
+      <!-- <span class="sync-string">{{ status.syncTime | syncString}}</span> -->
+      <span ng-hide="status.online" style="opacity:0.8;">No internet connection</span>
+      <span ng-show="status.online" style="opacity:0.8;">{{status.connected ? status.primaryCalendar : "Please sign-in"}}</span>
+      <a ng-show="status.connected" class="setting-icon glyphicon glyphicon-refresh" href="" ng-click="syncAll(true)" title="Sync event now"></a>
+      <a class="setting-icon glyphicon glyphicon-cog" href="#/connect" title="Options"></a>
+    </div>
+  </div>
+  <div class="current-div">
+    <div ng-show="current">
+      <div class="fieldRow">
+        <a style="font-size:18px;margin-left:26px;" ng-href="{{current.htmlLink}}" target="_blank">{{current.summary}}</a>
+      </div>
+      <div class="fieldRow">
+        <span class="bellIcon glyphicon glyphicon-bell"></span>
+        <span ng-show="current.allDay">{{current.startTime | date:'EEEE, MMM d ' }} - {{current.endTime | date:'EEEE, MMM d ' }} (All day)</span>
+        <span ng-hide="current.allDay">{{current.startTime | date:'EEEE, MMM d, h:mm a' }} - {{current.endTime | date:'EEEE, MMM d, h:mm a' }}</span>
+      </div>
+      <div class="fieldRow" ng-show="current.location">
+        <span class="mapIcon glyphicon glyphicon-map-marker"></span>
+        <a ng-href="{{current.location | locationURL}}" target="_blank">{{current.location}}</a>
+      </div>
+      <div class="fieldRow" ng-show="current.hangoutLink">
+        <span class="videoIcon glyphicon glyphicon-facetime-video"></span>
+        <a ng-href="{{current.hangoutLink}}" target="_blank">Join video call</a>
+      </div>
+      <div class="fieldRow" ng-show="current.description && (!current.location || !current.hangoutLink)">
+        <span class="infoIcon glyphicon glyphicon-comment"></span>
+        {{current.description}}
+      </div>
+    </div>
+    <div ng-hide="current">
+      <div class="fieldRow" ng-show="status.connected" style="font-size:18px;">
+        No new events for the next {{setting.futureDay}} days
+      </div>
+    </div>
+  </div>
+  <div class="divTable">
+    <table class=" table table-hover">
+      <tr class="divRow" ng-click="select(event.id)" ng-class='{selected: event.id==selected}' ng-repeat="event in eventArray">
+        <td class="divCell" style="width:50%;">
+          {{event.summary}}
+        </td>
+        <td class="divCell" style="width:120px;" ng-style="event.startTime | timeColor">
+          {{event.startTime | timeFromNow}}
+        </td>
+        <td class="divCell">
+          <span class="glyphicon glyphicon-stop" ng-style="event.color"></span>{{event.calendarName}}
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="col-xs-12 panel-footer">
+    <div>
+      <div class="col-xs-8" ng-show="snoozeTime">
+        <div class="pull-right">
+          <span>Remind again at {{snoozeTime | date: 'h:mm a'}}</span>
+          <button type="button" class="btn btn-default" ng-click="cancelSnooze(current.id);">Cancel</button>
+        </div>
+      </div>
+      <div class="col-xs-8" ng-hide="snoozeTime">
+        <div class="btn-group dropup pull-right">
+          <button class="btn btn-default" ng-click="snooze(current.id, 5);">Snooze for 5 mins</button>
+          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a ng-click="snooze(current.id, 240);">Snooze for 4 hours</a>
+            </li>
+            <li>
+              <a ng-click="snooze(current.id, 60);">Snooze for 1 hour</a>
+            </li>
+            <li>
+              <a ng-click="snooze(current.id, 30);">Snooze for 30 mins</a>
+            </li>
+            <li>
+              <a ng-click="snooze(current.id, 10);">Snooze for 10 mins</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-4 btn-group dropup">
+        <button class="btn btn-default" ng-click="dismiss();">Dismiss</button>
+        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a ng-click="dismissAll();">Dismiss All</a>
+          </li>
+          <li>
+            <a ng-click="dismissOverdues();">Dismiss Overdues</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

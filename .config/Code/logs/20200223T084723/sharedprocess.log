@@ -1,0 +1,14 @@
+[2020-02-23 08:47:26.416] [sharedprocess] [info] main {"machineId":"7f5f2f3805f54d2192af99e5872c84ae8e81a8bea8c0762f8f5a3ccbc15b8720","windowId":2}
+[2020-02-23 08:48:06.420] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-02-23 15:20:15.454] [sharedprocess] [info] Installing extension: james-yu.latex-workshop
+[2020-02-23 15:20:15.454] [sharedprocess] [info] Installing extension: yzane.markdown-pdf
+[2020-02-23 15:20:18.028] [sharedprocess] [info] Downloaded extension: james-yu.latex-workshop /tmp/39113ec2-8951-428e-bce1-88ab1b810ec4
+[2020-02-23 15:20:18.240] [sharedprocess] [info] Downloaded extension: yzane.markdown-pdf /tmp/76df3468-4135-4217-8336-2e202f78eb6d
+[2020-02-23 15:20:21.455] [sharedprocess] [info] Extracted extension to /home/zack/.vscode/extensions/.yzane.markdown-pdf-1.4.2: yzane.markdown-pdf
+[2020-02-23 15:20:21.456] [sharedprocess] [info] Renamed to /home/zack/.vscode/extensions/yzane.markdown-pdf-1.4.2
+[2020-02-23 15:20:21.457] [sharedprocess] [info] Installation completed. yzane.markdown-pdf
+[2020-02-23 15:20:21.458] [sharedprocess] [info] Extracted extension to /home/zack/.vscode/extensions/.james-yu.latex-workshop-8.7.2: james-yu.latex-workshop
+[2020-02-23 15:20:21.458] [sharedprocess] [info] Renamed to /home/zack/.vscode/extensions/james-yu.latex-workshop-8.7.2
+[2020-02-23 15:20:21.459] [sharedprocess] [info] Installation completed. james-yu.latex-workshop
+[2020-02-23 15:20:21.487] [sharedprocess] [info] Extensions installed successfully: yzane.markdown-pdf
+[2020-02-23 15:20:21.494] [sharedprocess] [info] Extensions installed successfully: james-yu.latex-workshop

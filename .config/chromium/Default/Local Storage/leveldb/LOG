@@ -1,0 +1,6 @@
+2020/02/24-16:23:54.489 819 Reusing MANIFEST /home/zack/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2020/02/24-16:23:54.489 819 Recovering log #911
+2020/02/24-16:23:54.491 819 Reusing old log /home/zack/.config/chromium/Default/Local Storage/leveldb/000911.log 
+2020/02/24-16:24:55.474 e2a Level-0 table #915: started
+2020/02/24-16:24:55.485 e2a Level-0 table #915: 15997 bytes OK
+2020/02/24-16:24:55.487 e2a Delete type=0 #911

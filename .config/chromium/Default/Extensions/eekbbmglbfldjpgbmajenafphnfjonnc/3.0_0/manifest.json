@@ -1,0 +1,22 @@
+{
+   "background": {
+      "scripts": [ "sketch.js", "floodfill.min.js" ]
+   },
+   "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "SketchPad"
+   },
+   "description": "Create and save drawings at the click of a button.",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm4F95u5Umn1TV6NSbcVzBxLCBVYyIfM2n1WwNyZsxGfbcU6zNwUcItMuAMSaoKt02LGLEqd4KEwcVLOrF0pNzsHq4np2sF+BGlUSZP/n/6MwJIlL7lnXxNTw1fJI3FxeWSn/2k/3DTJHYaLganBTDJeM95APg4lJcQutw658yvX/znpOggtzhjqIZmxL2dINuP1V4umfYeAqSFVJdpuD3FdD/BgLsNHLAdXc+uwDru6W0R3PcbwBRjuA1bsk6faM3iQssFDnPNjteJoV0x5DZWngHWQTpG1xfM+qqp+hzSzsFYEJJJtk5oA4jm0bLuugOIkymw728VPoDSzXZDDK5QIDAQAB",
+   "manifest_version": 2,
+   "name": "SketchPad",
+   "permissions": [ "storage" ],
+   "short_name": "SketchPad",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.0"
+}

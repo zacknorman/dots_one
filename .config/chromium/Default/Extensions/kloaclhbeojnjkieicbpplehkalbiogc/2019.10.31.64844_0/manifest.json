@@ -1,0 +1,26 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://pdsb1-my.sharepoint.com/myclass/_layouts/15/start.aspx#/default.aspx?mobile=0&wa=wsignin1.0"
+      },
+      "linked_icons": [  ]
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "mpFfqokJ0zGm9wgnbVTreSZ+xQJ8KqxaqrZfA7suLL8=",
+   "name": "My Class",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "https://pdsb1-my.sharepoint.com/myclass/_layouts/15/start.aspx*" ],
+         "title": "My Class"
+      }
+   },
+   "version": "2019.10.31.64844"
+}

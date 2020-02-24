@@ -1,0 +1,26 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://fed.pdsb.org/adfs/ls/?lc=1033&username=775591%40pdsb.org&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=estsredirect%3d2%26estsrequest%3drQIIAbPSzCgpKSi20tcvSClOMtTNrdQrzkgsSi3Iz8wr0UvOz9XLL0rPTAGxioS4BDyTZzkZ9fzzXPcqtsL3vPSTVYzGBPTrx6flF-UW66ekpiWW5pToJRYXVFxgZHzByNjFxGJoYGy8iYnZ18nzBNO5Q3K3mAT9i9I9U8KL3VJTUosSSzLz8x4x8YYWpxb55-VUhuRnp-ZNYubLyU_PzIsvLkqLT8vJLwcKAK0pSEwuiS_JTM5OLdnFrJJoYJJkkmSZpptsbJSsa5KSZqybZG6UpJuUkpJsaWxiaWCSbHGBRWAXpyUZrrdPLCiyNQQA0&popupui="
+      },
+      "linked_icons": [  ]
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "CgHgrB70Cbp3NWqZbrGN1l3qiphYroeBV3Lt+93tyQo=",
+   "name": "Sign In",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "https://fed.pdsb.org/adfs/ls/*" ],
+         "title": "Sign In"
+      }
+   },
+   "version": "2020.2.24.58436"
+}

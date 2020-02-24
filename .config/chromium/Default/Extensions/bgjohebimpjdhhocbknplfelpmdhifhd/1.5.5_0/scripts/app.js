@@ -1,0 +1,1 @@
+"use strict";function runApp(){chrome.app.window.create("browser.html",{id:"browserWinID",bounds:{width:1024,height:768}})}chrome.app.runtime.onLaunched.addListener(function(){runApp()}),chrome.runtime.onInstalled.addListener(function(a){console.log("previousVersion",a.previousVersion)}),chrome.app.runtime.onRestarted.addListener(function(){runApp()});

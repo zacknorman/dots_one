@@ -1,0 +1,23 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "js/bgscript.js" ]
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDescription__",
+   "icons": {
+      "128": "img/wc128.png",
+      "16": "img/wc16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApW2DbVMs38Ma8ACienY1v5XrxYyMg172J9oSpJDN18bkGwU3uV60d+goyEQgUpcdJn6iFvRbAWAgiJFPvobZfCDErmedWghG955ynwetcnZgnuIMKRfS2rnri4jq1Yr3nGSyzp8qJ+BTpHgpwpqTGkeSkGQko3VBoIgGCbg0OCbkO4KFd6OoNAzHa26ql2JLV3eELSDLE1py/UmCV7mviP1NQ94ajCLZGHdKon3MbIEJph8Kgw8tJZ4D7+HJh+neU1HzODlSEr7zxGhWuiXF2wU88UnVS5pYcul4yCa7sap2eLdnQ/8l5xNfi2+LdEXLKPJi7OF01a6BJlsACq8dMwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "offline_enabled": true,
+   "permissions": [ "storage", "unlimitedStorage", "fullscreen", {
+      "fileSystem": [ "write" ]
+   }, "notifications", "app.window.fullscreen.overrideEsc" ],
+   "short_name": "__MSG_shortName__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2020.214.2.3"
+}

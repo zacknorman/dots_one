@@ -1,0 +1,16 @@
+[14:13:01] Initializing LaTeX Workshop.
+[14:13:01] Cannot run pdflatex to determine if we are using MiKTeX
+[14:13:01] Creating LaTeX Workshop http and websocket server.
+[14:13:01] LaTeX Workshop initialized.
+[14:13:01] Server created on 127.0.0.1:35965
+[14:13:01] Snippet data loaded.
+[14:13:01] LaTeX Workshop version: 8.7.1
+[14:13:01] PDF command invoked.
+[14:13:01] Serving PDF file at http://localhost:35965/viewer.html?file=pdf..JTJGaG9tZSUyRnphY2slMkZjczMxMTAlMkZDSVMzMTEwX0ExXzIwMjBfdXBkYXRlZC5wZGY
+[14:13:01] The encoded path is /home/zack/cs3110/CIS3110_A1_2020_updated.pdf
+[14:13:01] Open PDF tab for /home/zack/cs3110/CIS3110_A1_2020_updated.pdf
+[14:13:01] Handle data type: open
+[14:13:01] Preview PDF file: /home/zack/cs3110/CIS3110_A1_2020_updated.pdf
+[14:13:01] Handle data type: request_params
+[14:13:02] Handle data type: loaded
+[15:37:38] Handle data type: close

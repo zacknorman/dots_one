@@ -1,0 +1,19 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "main.js" ]
+      }
+   },
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCSya9U2DaWsmdddOxkF9dHjrc2sFvzthVvWNAuc3ETo8T0xbwJ0DVyHM8UZj9+K19RN4UojbSSwF6A4EQ6Uo135e1vwgMbDhUql/3CkM/f37UZALrFeHpt7LDmZc6gb1b8raF19xpxBtLbWo9wCfH3fsTRj+2qmxbw8kMeaApbuQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "23",
+   "name": "Break Reminder",
+   "permissions": [ "notifications", "alarms", "storage" ],
+   "short_name": "Break Timer",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "6"
+}

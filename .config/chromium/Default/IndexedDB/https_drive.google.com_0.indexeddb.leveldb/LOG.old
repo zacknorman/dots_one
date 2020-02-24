@@ -1,0 +1,16 @@
+2020/02/24-10:47:49.024 975 Reusing MANIFEST /home/zack/.config/chromium/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/02/24-10:47:49.024 975 Recovering log #104
+2020/02/24-10:47:49.024 975 Reusing old log /home/zack/.config/chromium/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000104.log 
+2020/02/24-10:47:56.825 ed0 Compacting 2@0 + 1@1 files
+2020/02/24-10:47:56.842 ed0 Generated table #107@0: 187 keys, 920744 bytes
+2020/02/24-10:47:56.842 ed0 Compacted 2@0 + 1@1 files => 920744 bytes
+2020/02/24-10:47:56.844 ed0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/02/24-10:47:56.844 ed0 Delete type=2 #103
+2020/02/24-10:47:56.844 ed0 Delete type=2 #101
+2020/02/24-10:47:56.844 ed0 Delete type=2 #105
+2020/02/24-10:47:57.030 ed0 Level-0 table #109: started
+2020/02/24-10:47:57.042 ed0 Level-0 table #109: 1025600 bytes OK
+2020/02/24-10:47:57.045 ed0 Delete type=0 #104
+2020/02/24-10:47:57.181 ed0 Level-0 table #111: started
+2020/02/24-10:47:57.190 ed0 Level-0 table #111: 1055943 bytes OK
+2020/02/24-10:47:57.193 ed0 Delete type=0 #108

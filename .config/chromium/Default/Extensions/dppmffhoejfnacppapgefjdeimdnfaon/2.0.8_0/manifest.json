@@ -1,0 +1,32 @@
+{
+   "author": "HackHands",
+   "background": {
+      "persistent": false,
+      "scripts": [ "background-script.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "content-script.js" ],
+      "matches": [ "*://*.hackhands.com/*", "*://*.pluralsight.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Share the screen of your computer.",
+   "externally_connectable": {
+      "matches": [ "*://*.hackhands.com/*", "*://*.pluralsight.com/*" ]
+   },
+   "homepage_url": "https://www.hackhands.com/",
+   "icons": {
+      "128": "logo128.png",
+      "16": "logo16.png",
+      "48": "logo48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9iYkhAVhlfshKCuYrIh36/p1F/ZxnGKgpo3X7KWQ20IZn6jYnYoIIxCUg5aS47nPxkV2dJmYqNL8g4LlN0MaQVwS+1HKjv/PcjSh/Hlvbx3Uxx+XDZDnaJvYiu86KgNhhhTGNKj25X3F6KtrcrdUBdq+BHhgpLg5vlXE6XGefaFj7FMwG1+L3Fxuhvpv8XZ82b/4123dvDRTPL8hDF7z2+7PTNGv3vpL0+6qUyVs1HlhThpzpu2LIxdSfzs6D5MHkH6mCP/9FUeZaIoRalEm7OdJrfgQWPvbvVTVBDCgR1AyjkLbUUuPOE9by8N50r1hMrLIh5Esz1hk4y8Nag35XQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "34",
+   "name": "HackHands screen sharing",
+   "offline_enabled": true,
+   "permissions": [ "desktopCapture" ],
+   "short_name": "HH-ScreenShare",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.8",
+   "web_accessible_resources": [ "icon.png" ]
+}

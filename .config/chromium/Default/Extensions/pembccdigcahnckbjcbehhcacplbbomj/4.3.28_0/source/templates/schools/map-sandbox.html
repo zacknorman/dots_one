@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loading Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script>
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+
+      function initialize() {
+        var latitude = getParameterByName('lat');
+        var longitude = getParameterByName('lon');
+        if (latitude && longitude) {
+          var geo = new google.maps.LatLng(parseFloat(latitude), parseFloat(longitude));
+          var map = new google.maps.Map(document.getElementById('map-canvas'), {
+            zoom: 16,
+            center: geo,
+            mapTypeId: google.maps.MapTypeId.SATELLITE,
+            disableDefaultUI: true
+          });
+          var marker = new google.maps.Marker({ 
+            position: geo,
+            map: map
+          });
+        }
+      }
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&callback=initialize';
+        document.body.appendChild(script);
+      }
+
+      window.onload = loadScript;
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>

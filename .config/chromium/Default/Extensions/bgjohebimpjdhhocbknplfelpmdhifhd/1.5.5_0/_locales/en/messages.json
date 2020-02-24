@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "The description of the application",
+      "message": "Todoist is the leading online to-do list and task manager. We manage millions of to-dos and we are ready to manage yours as well!"
+   },
+   "appName": {
+      "description": "The name of the application",
+      "message": "Todoist for Chrome"
+   }
+}

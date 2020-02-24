@@ -1,0 +1,20 @@
+[2020-02-04 14:10:37.329] [sharedprocess] [info] main {"machineId":"7f5f2f3805f54d2192af99e5872c84ae8e81a8bea8c0762f8f5a3ccbc15b8720","windowId":2}
+[2020-02-04 14:11:17.334] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-02-04 14:11:24.946] [sharedprocess] [info] Installing extension: yzane.markdown-pdf
+[2020-02-04 14:11:27.563] [sharedprocess] [info] Downloaded extension: yzane.markdown-pdf /tmp/da45709b-5215-42b0-be3c-4e55c816a8d2
+[2020-02-04 14:11:29.873] [sharedprocess] [info] Extracted extension to /home/zack/.vscode/extensions/.yzane.markdown-pdf-1.4.1: yzane.markdown-pdf
+[2020-02-04 14:11:29.873] [sharedprocess] [info] Renamed to /home/zack/.vscode/extensions/yzane.markdown-pdf-1.4.1
+[2020-02-04 14:11:29.874] [sharedprocess] [info] Installation completed. yzane.markdown-pdf
+[2020-02-04 14:11:29.889] [sharedprocess] [info] Extensions installed successfully: yzane.markdown-pdf
+[2020-02-04 14:12:43.661] [sharedprocess] [info] Installing extension: james-yu.latex-workshop
+[2020-02-04 14:12:44.863] [sharedprocess] [info] Downloaded extension: james-yu.latex-workshop /tmp/1a97fb9b-6629-4c3a-be8b-e5a88653fce6
+[2020-02-04 14:12:47.136] [sharedprocess] [info] Extracted extension to /home/zack/.vscode/extensions/.james-yu.latex-workshop-8.7.1: james-yu.latex-workshop
+[2020-02-04 14:12:47.136] [sharedprocess] [info] Renamed to /home/zack/.vscode/extensions/james-yu.latex-workshop-8.7.1
+[2020-02-04 14:12:47.138] [sharedprocess] [info] Installation completed. james-yu.latex-workshop
+[2020-02-04 14:12:47.157] [sharedprocess] [info] Extensions installed successfully: james-yu.latex-workshop
+[2020-02-04 14:15:44.002] [sharedprocess] [info] Installing extension: ms-vscode.cpptools
+[2020-02-04 14:15:44.476] [sharedprocess] [info] Downloaded extension: ms-vscode.cpptools /tmp/2b7f5c03-a3a0-4939-bb6f-a4ad43e8581b
+[2020-02-04 14:15:44.943] [sharedprocess] [info] Extracted extension to /home/zack/.vscode/extensions/.ms-vscode.cpptools-0.26.3: ms-vscode.cpptools
+[2020-02-04 14:15:44.943] [sharedprocess] [info] Renamed to /home/zack/.vscode/extensions/ms-vscode.cpptools-0.26.3
+[2020-02-04 14:15:44.946] [sharedprocess] [info] Installation completed. ms-vscode.cpptools
+[2020-02-04 14:15:44.953] [sharedprocess] [info] Extensions installed successfully: ms-vscode.cpptools

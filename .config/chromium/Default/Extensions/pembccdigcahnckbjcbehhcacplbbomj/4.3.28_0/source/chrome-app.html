@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myHomework" ng-csp>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>myHomework</title>
+  <link rel="stylesheet" type="text/css" href="css/build-1.4.40.min.css" media="screen, projection">
+  <script type="text/javascript" src="js/Promise.min.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/angular.min.js"></script>  
+  <script type="text/javascript" src="js/build-1.4.40.min.js"></script>
+</head>
+<body ng-controller="AppCtrl" class="{{ bodyClass }} {{ macOnlyColumn }}" ng-class="{'app': !isMacApp, 'mac-app': isMacApp, 'chrome-app': isChromeApp, 'mac-modal': isMacModal, 'is-mac': isMac, 'is-latest-mac': isLatestMac}">
+<section ng-if="!isMacModal" class="main-section">
+  <main-nav></main-nav>
+  <div ng-view class="main-content" ng-class="{'open':navOpened, 'closed': !navOpened && isMacApp}"></div>
+</section>
+<section ng-if="isMacModal"><div ng-view></div></section>
+<div class="update-message" ng-class="{'opened': showUpdateMessage}" ng-if="updateToVersion">A new version of myHomework is available! Just <a ng-click="doUpdate(updateToVersion)">restart</a> to update.<span class="close-button" ng-click="closeUpdateMessage(updateToVersion)"></span></div>
+<div class="update-message" ng-class="{'opened': showLastSyncWarning}" ng-if="user && lastSyncDate">You haven't synced since {{ lastSyncDate | relativeDate }}. <a ng-click="syncFromSyncWarning()">Sync now</a> <span class="close-button" ng-click="closeLastSyncWarning()"></span></div>
+<spinner ng-if="mainSpinner.show" class="main-spinner" spinner-text="{{ mainSpinner.text }}"></spinner>
+<div class="splash-screen {{ splashScreenClass }}" ng-if="!isMacModal">
+  <span class="logo"><span class="ico"></span></span>
+</div>
+<custom-theme ng-if="user && user.theme && showTheme"></custom-theme>
+</body>
+</html>

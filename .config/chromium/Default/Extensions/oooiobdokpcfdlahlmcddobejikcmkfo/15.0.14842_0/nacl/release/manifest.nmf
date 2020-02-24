@@ -1,0 +1,7 @@
+{
+  "program": {
+    "x86-32": { "url": "TeamViewerModule_x86-32.nexe"}, 
+    "x86-64": { "url": "TeamViewerModule_x86-64.nexe"},
+    "arm": { "url": "TeamViewerModule_armv7.nexe"}
+  }
+}

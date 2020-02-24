@@ -1,0 +1,42 @@
+<div class="container" ng-controller="about">
+  <div class="leftPanel">
+    <nav class="nav-sidebar">
+      <ul class="nav">
+        <li>
+          <a href="#/main">
+              Back</a>
+        </li>
+        <li>
+          <a href="#/connect">
+              Connect</a>
+        </li>
+        <li>
+          <a href="#/options">
+              Options</a>
+        </li>
+        <li class="active">
+          <a href="#/about">
+              About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="rightPanel">
+    <a href="https://chrome.google.com/webstore/detail/calendar-reminder/fgfgfbgekocmkfenbpndokpjjbifncoj" target="_blank">
+      <span>
+        <img src="img/icon_32.png" height="24px">{{' ' +manifestData.name}}
+        <small>{{manifestData.version}}</small>
+      </span>
+    </a>
+    <p>
+      <br>Thanks for using Owl Reminder. Feel free to leave comments on our <a href="http://chromeism.com/owl-reminder/" target="_blank">product page</a>!
+    </p>
+    <strong>
+      About Chromeism
+    </strong>
+    <p>
+      <br>We are interested in everything about Chrome and Chromebook. Check out our Chrome apps & extensions!
+    </p>
+    <a href="http://www.chromeism.com" target="_blank">www.chromeism.com</a>
+  </div>
+</div>

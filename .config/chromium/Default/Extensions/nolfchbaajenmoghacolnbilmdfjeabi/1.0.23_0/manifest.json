@@ -1,0 +1,35 @@
+{
+   "author": "PredictHQ",
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+
+   },
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   "content_scripts": [ {
+      "js": [ "redirect.js" ],
+      "matches": [ "https://app.predicthq.com/grant/completed/" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "default-src 'self' 'unsafe-inline'; font-src http://fonts.gstatic.com; style-src 'self' 'unsafe-inline' http://fonts.gstatic.com http://fonts.googleapis.com; object-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com https://maps.googleapis.com; connect-src data: https://app.getsentry.com http://api.gamma.phq.io http://api.local.phq.io https://focus.predicthq.com http://cdn-focus.predicthq.com https://cdn-focus.predicthq.com https://api.predicthq.com; img-src data: https://unsplash.com https://images.unsplash.com https://pixabay.com https://www.pexels.com https://stocksnap.io https://picjumbo.com http://www.freeimages.com https://cdn-avatars.predicthq.com https://s3.amazonaws.com https://cdn-focus.predicthq.com https://maps.googleapis.com https://csi.gstatic.com;",
+   "description": "Replace new tab page with a timeline of events based on your location. Stunning imagery 365 days of the year. To-do List coming soon",
+   "homepage_url": "https://chrome.google.com/webstore/detail/focus/nolfchbaajenmoghacolnbilmdfjeabi",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiY8SNvVL/p4wlhGAiWNtN1ZW2nV4W2Ybb6R7+mHio6Ju4+i3QIYzc3VtdpQlXmS6wMgwIDleIyYV/Vj7b5ryO254324E3OLO8MZV6ZuiJN6gPDibE7z7YQkU9wYdOTEDGlDuZyO7/jzXF95QRAUKjiviQUAkIjACyqFjMRKbKXVZhBW2HyVsQlg+jiAwkeiwa3zGVyFCbm62Y3Jo/Sjhoi6lLqzuj9LjzdFvEKEo9NJ5dnuuG/Ue+sY2VPwW60QrSQ36E7tb5s0U+QVIb4+7LmNjUU9ioIMEb7fT8XeqWEDnzvhwydGuNerym1IiWg52XOXV1nAaz7LTvU7LWGLcGQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "48",
+   "name": "FOCUS",
+   "permissions": [ "storage", "geolocation", "*://*.predicthq.com/*" ],
+   "short_name": "FOCUS New Tab by PredictHQ",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.23",
+   "web_accessible_resources": [ "*.*" ]
+}
